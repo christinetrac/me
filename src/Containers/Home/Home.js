@@ -1,8 +1,30 @@
 import React from 'react';
+import Slider from "react-slick";
 import styles from './Home.module.css';
 import resume from '../../Assets/ChristineTrac_Resume.pdf';
+import leftArrow from '../../Assets/arrow-left.svg';
+import rightArrow from '../../Assets/arrow_right.svg';
 import Background from "../../Components/Background/Background";
 import Navigation from "../../Components/Navigation/Navigation";
+import { miniProjects } from "../../Constants/constants";
+
+const LeftArrow = ({ currentSlide, slideCount, ...props }) => (
+    <img src={leftArrow} alt="previous" {...props} />
+);
+
+const RightArrow = ({ currentSlide, slideCount, ...props }) => (
+    <img src={rightArrow} alt="next" {...props} />
+);
+
+const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3.1,
+    slidesToScroll: 1,
+    prevArrow: <LeftArrow />,
+    nextArrow: <RightArrow />,
+};
 
 export default function Home(props) {
     return (
@@ -22,6 +44,13 @@ export default function Home(props) {
                     See My Resume
                 </button>
             </div>
+            <Slider {...settings} className={styles.slider}>
+                {miniProjects.map((project, i) => (
+                    <div key={project.name} className={[styles.card, `card${i}`].join(" ")}>
+                        {project.name}
+                    </div>
+                ))}
+            </Slider>
         </Background>
     )
 }

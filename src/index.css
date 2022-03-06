@@ -9,6 +9,34 @@ body {
   -moz-user-select: none;
 }
 
+.slick-next {
+  right: 25px !important;
+}
+
+.card0 {
+  background-image: linear-gradient(to right bottom, #d8d6ff, #e7dbfc, #f2e1fa, #f9e8f9, #fef0f9);
+}
+
+.card1 {
+  background-image: linear-gradient(to right bottom, #fef0f9, #f7ecfb, #eceafe, #dee8ff, #cee7fd);
+}
+
+.card2 {
+  background-image: linear-gradient(to right bottom, #cee7fd, #ceecfc, #d0f0fa, #d5f4f7, #dcf7f5);
+}
+
+.card3 {
+  background-image: linear-gradient(to right bottom, #dcf7f5, #dcf8f0, #dff9eb, #e4f9e4, #ebf8de);
+}
+
+.card4 {
+  background-image: linear-gradient(to right bottom, #ebf8de, #f1f5da, #f7f1d8, #fceed7, #ffebd8);
+}
+
+.card5 {
+  background-image: linear-gradient(to right bottom, #ffebd8, #ffe5d8, #ffdfdc, #ffdbe1, #f7d8e7);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
