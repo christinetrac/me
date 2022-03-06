@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Home from "./Containers/Home/Home";

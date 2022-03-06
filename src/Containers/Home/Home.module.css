@@ -1,0 +1,87 @@
+/* desktop */
+
+.introContainer {
+    margin-top: 32px;
+    margin-left: 175px;
+}
+
+.title {
+    font-weight: 510;
+    font-size: 80px;
+    line-height: 80px;
+    color: #101B3D;
+    width: 600px;
+}
+
+.subtitle {
+    font-size: 21px;
+    line-height: 30px;
+    color: #677075;
+    width: 540px;
+    margin: 25px 0;
+}
+
+span {
+    color: #8F8BDB;
+}
+
+button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background: #11181C;
+    border-radius: 8px;
+    font-weight: 510;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #262F34;
+}
+
+/* tablet */
+@media screen and (max-width: 835px) {
+    .introContainer {
+        margin-top: 22px;
+        margin-left: 57px;
+        margin-right: 27px;
+    }
+    .title {
+        width: 460px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .subtitle {
+        width: 390px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 520px) {
+    .introContainer {
+        margin-top: 12px;
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+    .title {
+        width: 100%;
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .subtitle {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 14px;
+        margin-bottom: 18px;
+    }
+    button {
+        width: 120px;
+        height: 34px;
+        font-size: 12px;
+    }
+}

@@ -16,16 +16,16 @@
 .link {
     text-decoration: none;
     color: #677075;
-    padding-left: 50px;
+    margin-left: 50px;
     font-size: 16px;
 }
 
-.heart:hover, .heart:active {
+.heart:hover {
     color: #D690B2;
 }
 
-.link:hover, .link:active, .mobileLink:hover, .mobileLink:active {
-    text-decoration: underline;
+.link:hover {
+    border-bottom: 2px solid #E2E2E2;
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 /* mobile */
 @media screen and (max-width: 520px) {
     .container {
-        padding: 40px 29px;
+        padding: 24px 27px;
     }
     .heart {
         height: 18px;

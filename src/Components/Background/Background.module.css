@@ -1,8 +1,6 @@
 .gradient {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(246.51deg, #C7EAE8 0%, #FDFBFD 45%, #FDFBFD 65%, #F7D8E7 100%), #FDFBFD;
-    /*
+    /*background: linear-gradient(246.51deg, #C7EAE8 0%, #FDFBFD 45%, #FDFBFD 65%, #F7D8E7 100%), #FDFBFD;*/
     background-image: linear-gradient(to right top, #f7d8e7, #f7dfec, #f8e6f1, #f9ecf5, #faf3f9, #f8f4fa, #f7f4fb, #f5f5fc, #ebf2fc, #deeff9, #d1edf3, #c7eae8);
-     */
 }
