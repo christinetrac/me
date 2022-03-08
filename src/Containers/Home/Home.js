@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import styles from './Home.module.css';
 import resume from '../../Assets/ChristineTrac_Resume.pdf';
@@ -9,26 +9,194 @@ import Navigation from "../../Components/Navigation/Navigation";
 import { miniProjects } from "../../Constants/constants";
 
 export default function Home(props) {
+    const [windowSize, setWindowSize] = useState({
+        width: undefined,
+        height: undefined,
+    });
+    useEffect(() => {
+        function handleResize() {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        }
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const [index, setIndex] = useState(0);
 
     const LeftArrow = ({ currentSlide, slideCount, style, ...props }) => (
-        <img src={leftArrow} alt="previous" style={{...style, display: index === 0 && 'none'}} {...props} />
+        <img
+            src={leftArrow}
+            alt="previous"
+            style={{...style, display: index === 0 && 'none'}}
+            {...props}
+        />
     );
 
     const RightArrow = ({ currentSlide, slideCount, style, ...props }) => (
-        <img src={rightArrow} alt="next" style={{...style, display: index === 2.9 && 'none'}} {...props} />
+        <img
+            src={rightArrow}
+            alt="next"
+            style={{...style, display: index === lastIndex() && 'none'}}
+            {...props}
+        />
     );
-    console.log(index);
+
+    const lastIndex = () => {
+        if(windowSize.width > 2500){
+            return 0.9000000000000004;
+        } else if (windowSize.width > 2100){
+            return 1.5;
+        } else if (windowSize.width > 1700){
+            return 2.5;
+        } else if (windowSize.width > 1500){
+            return 2.9;
+        } else if (windowSize.width > 1250){
+            return 3.4;
+        } else if (windowSize.width > 1120){
+            return 3.8;
+        } else if (windowSize.width > 950){
+            return 3.9;
+        } else if (windowSize.width > 850){
+            return 4.1;
+        } else {
+            return 0;
+        }
+    };
 
     const settings = {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 3.1,
+        slidesToShow: 5.1,
         slidesToScroll: 1,
         prevArrow: <LeftArrow />,
         nextArrow: <RightArrow />,
-        beforeChange: (current, next) => setIndex(next)
+        beforeChange: (current, next) => setIndex(next),
+        responsive: [
+            {
+                breakpoint: 2500,
+                settings: {
+                    slidesToShow: 4.5,
+                }
+            },
+            {
+                breakpoint: 2100,
+                settings: {
+                    slidesToShow: 3.5,
+                }
+            },
+            {
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 3.1,
+                }
+            },
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 2.6,
+                }
+            },
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 2.2,
+                }
+            },
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 2.1,
+                }
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 1.9,
+                }
+            },
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 1.7,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 1.5,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1.3,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1.2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1.1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1.4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 470,
+                settings: {
+                    slidesToShow: 1.3,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1.2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 405,
+                settings: {
+                    slidesToShow: 1.1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 1.05,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 350,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            },
+        ]
     };
 
     return (

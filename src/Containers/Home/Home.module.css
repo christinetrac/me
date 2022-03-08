@@ -121,6 +121,9 @@ button:hover {
         font-size: 18px;
         line-height: 26px;
     }
+    .slider {
+        margin-left: 57px;
+    }
 }
 
 /* mobile */
@@ -146,5 +149,37 @@ button:hover {
         width: 120px;
         height: 34px;
         font-size: 12px;
+    }
+    .slider {
+        margin-left: 27px;
+    }
+    .cardContainer {
+        width: 300px !important;
+    }
+    .card {
+        width: 300px !important;
+        height: 300px;
+    }
+    .tag {
+        padding: 4px 8px;
+        font-size: 8px;
+    }
+    .mockup {
+        width: 350px;
+    }
+    .name {
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .description {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cardContainer {
+        margin-right: 20px;
     }
 }
