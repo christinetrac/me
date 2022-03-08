@@ -1,32 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import styles from './Home.module.css';
 import resume from '../../Assets/ChristineTrac_Resume.pdf';
-import leftArrow from '../../Assets/arrow-left.svg';
+import leftArrow from '../../Assets/arrow_left.svg';
 import rightArrow from '../../Assets/arrow_right.svg';
 import Background from "../../Components/Background/Background";
 import Navigation from "../../Components/Navigation/Navigation";
 import { miniProjects } from "../../Constants/constants";
 
-const LeftArrow = ({ currentSlide, slideCount, ...props }) => (
-    <img src={leftArrow} alt="previous" {...props} />
-);
-
-const RightArrow = ({ currentSlide, slideCount, ...props }) => (
-    <img src={rightArrow} alt="next" {...props} />
-);
-
-const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3.1,
-    slidesToScroll: 1,
-    prevArrow: <LeftArrow />,
-    nextArrow: <RightArrow />,
-};
-
 export default function Home(props) {
+    const [index, setIndex] = useState(0);
+
+    const LeftArrow = ({ currentSlide, slideCount, style, ...props }) => (
+        <img src={leftArrow} alt="previous" style={{...style, display: index === 0 && 'none'}} {...props} />
+    );
+
+    const RightArrow = ({ currentSlide, slideCount, style, ...props }) => (
+        <img src={rightArrow} alt="next" style={{...style, display: index === 2.9 && 'none'}} {...props} />
+    );
+    console.log(index);
+
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3.1,
+        slidesToScroll: 1,
+        prevArrow: <LeftArrow />,
+        nextArrow: <RightArrow />,
+        beforeChange: (current, next) => setIndex(next)
+    };
+
     return (
         <Background>
             <Navigation {...props} />
@@ -46,8 +50,19 @@ export default function Home(props) {
             </div>
             <Slider {...settings} className={styles.slider}>
                 {miniProjects.map((project, i) => (
-                    <div key={project.name} className={[styles.card, `card${i}`].join(" ")}>
-                        {project.name}
+                    <div key={project.name} className={styles.cardContainer}>
+                        <div className={[styles.card, `card${i}`].join(" ")}>
+                            <div className={styles.tag}>
+                                {project.tag}
+                            </div>
+                            <img className={styles.mockup} src={project.mockup} alt={project.name}/>
+                        </div>
+                        <div className={styles.name}>
+                            {project.name}
+                        </div>
+                        <div className={styles.description}>
+                            {project.description}
+                        </div>
                     </div>
                 ))}
             </Slider>

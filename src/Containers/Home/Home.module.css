@@ -51,6 +51,12 @@ button:hover {
     margin-left: 175px;
 }
 
+.cardContainer {
+    height: fit-content;
+    width: 400px !important;
+    outline-style: none;
+}
+
 .card {
     width: 400px !important;
     height: 400px;
@@ -58,6 +64,44 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: auto;
+    padding: 6px 10px;
+    background: #FCFBFE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #677075;
+}
+
+.mockup {
+    width: 460px;
+    height: auto;
+}
+
+.name {
+    font-size: 16px;
+    color: #101B3D;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: 510;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #677075;
 }
 
 /* tablet */
