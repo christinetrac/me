@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import styles from './Home.module.css';
 import resume from '../../Assets/ChristineTrac_Resume.pdf';
@@ -218,13 +219,15 @@ export default function Home(props) {
             </div>
             <Slider {...settings} className={styles.slider}>
                 {miniProjects.map((project, i) => (
-                    <div key={project.name} className={styles.cardContainer}>
-                        <div className={[styles.card, `card${i}`].join(" ")}>
-                            <div className={styles.tag}>
-                                {project.tag}
+                    <div className={styles.cardContainer}>
+                        <Link to={project.to} key={project.name}>
+                            <div className={[styles.card, `card${i}`].join(" ")}>
+                                <div className={styles.tag}>
+                                    {project.tag}
+                                </div>
+                                <img className={styles.mockup} src={project.mockup} alt={project.name}/>
                             </div>
-                            <img className={styles.mockup} src={project.mockup} alt={project.name}/>
-                        </div>
+                        </Link>
                         <div className={styles.name}>
                             {project.name}
                         </div>

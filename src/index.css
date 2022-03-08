@@ -9,6 +9,10 @@ body {
   -moz-user-select: none;
 }
 
+.szh-menu {
+  min-width: 30px !important;
+}
+
 .slick-next {
   right: 25px !important;
 }
@@ -22,10 +26,6 @@ body {
   z-index: 99;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   top: 40% !important;
-}
-
-.slick-prev:hover, .slick-next:hover {
-  background: #F4F3F4 !important;
 }
 
 .none {

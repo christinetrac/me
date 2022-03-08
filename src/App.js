@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Home from "./Containers/Home/Home";
+import Acnh from "./Containers/Projects/Acnh";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 520 })
@@ -8,6 +9,7 @@ function App() {
   return (
     <Routes>
       <Route exact path='/' element={<Home isMobile={isMobile}/>} />
+      <Route exact path='/acnh' element={<Acnh isMobile={isMobile}/>} />
     </Routes>
   );
 }
