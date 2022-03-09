@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import {
     Menu,
     MenuItem
@@ -13,7 +13,7 @@ export default function Navigation(props) {
     return (
         <div className={styles.container}>
             <Link to="/">
-                <FaRegHeart className={styles.heart} />
+                <FaHeart className={styles.heart} />
             </Link>
             { props.isMobile ? (
                 <div>
