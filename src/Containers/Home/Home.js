@@ -210,6 +210,7 @@ export default function Home(props) {
                     Currently a 3rd year Computer Engineering student at the University of Waterloo.
                 </div>
                 <button
+                    className={props.isMobile && styles.noMargin}
                     onClick={() => {
                         window.open(resume, "_blank");
                     }}
