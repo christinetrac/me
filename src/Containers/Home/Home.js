@@ -7,7 +7,7 @@ import leftArrow from '../../Assets/arrow_left.svg';
 import rightArrow from '../../Assets/arrow_right.svg';
 import Background from "../../Components/Background/Background";
 import Navigation from "../../Components/Navigation/Navigation";
-import { miniProjects } from "../../Constants/constants";
+import { projects } from "../../Constants/constants";
 
 export default function Home(props) {
     const [windowSize, setWindowSize] = useState({
@@ -218,7 +218,7 @@ export default function Home(props) {
                 </button>
             </div>
             <Slider {...settings} className={styles.slider}>
-                {miniProjects.map((project, i) => (
+                {projects.map((project, i) => (
                     <div className={styles.cardContainer}>
                         <Link to={project.to} key={project.name}>
                             <div className={[styles.card, `card${i}`].join(" ")}>
