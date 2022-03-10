@@ -70,6 +70,10 @@ export const dimension = {
     github: "https://github.com/christinetrac/dimension",
     devpost: "https://devpost.com/software/d-mension",
     highlights: "Dimension won 2nd place overall at RU Hacks 2021.",
+    gifs: [
+        require('../Assets/dimension-gif1.gif'),
+        require('../Assets/dimension-gif2.gif')
+    ]
 };
 
 export const friendle = {
