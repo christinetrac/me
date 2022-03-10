@@ -39,14 +39,14 @@ export default function Kitty(props) {
                 </div>
                 <div className={styles.subtitle}>Responsibilities</div>
                 <div className={styles.pillRoleContainer}>
-                    <div className={styles.pill} style={{color: "#74ACE0"}}>frontend dev</div>
+                    <div className={styles.pill} style={{color: "#8F8BDB"}}>frontend dev</div>
                     <div className={styles.pillName}>
                         Christine Trac
                     </div>
                 </div>
                 <div className={styles.pillRoleContainer}>
-                    <div className={styles.pill} style={{color: "#8F8BDB"}}>designer</div>
-                    <div className={styles.pill} style={{color: "#8F8BDB"}}>illustrator</div>
+                    <div className={styles.pill} style={{color: "#6FC6C1"}}>designer</div>
+                    <div className={styles.pill} style={{color: "#6FC6C1"}}>illustrator</div>
                     <div className={styles.pillName}>
                         <a href={buddyLinks.rachel}>Rachel Pun</a>
                     </div>
