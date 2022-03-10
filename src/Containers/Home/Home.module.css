@@ -98,9 +98,19 @@ button:hover {
     color: #677075;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .mockup {
     width: 460px;
     height: auto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .name {

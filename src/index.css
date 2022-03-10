@@ -56,7 +56,18 @@ body {
   background-image: linear-gradient(to right bottom, #ffebd8, #ffe5d8, #ffdfdc, #ffdbe1, #f7d8e7);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out, transform 300ms ease;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out, transform 300ms ease;
 }
