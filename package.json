@@ -1,7 +1,7 @@
 {
   "name": "me",
   "version": "0.1.0",
-  "homepage": "http://christinetrac.github.io/me",
+  "homepage": "https://christinetrac.github.io/",
   "private": true,
   "dependencies": {
     "@szhsin/react-menu": "^2.3.4",
