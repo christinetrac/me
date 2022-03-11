@@ -66,7 +66,7 @@ export const acnh = {
 
 export const dimension = {
     title: "Dimension",
-    subtitle: "Dimension is an online learning platform that uses immersive 3d streaming technology to enhance the visual-spatial experience for users. Students can subscribe to different streamers and keep track of their courses. They can watch course content live (with the option of 2d or 3d) alongside others with the ability to ask questions and talk to their peers using a chatbox.",
+    subtitle: "Dimension is an online education platform that uses immersive 3d streaming technology to enhance the visual-spatial learning experience for users. Students can subscribe to different streamers and keep track of their courses. They can watch course content live (with the option of 2d or 3d) alongside others with the ability to ask questions and talk to their peers using a built-in chat.",
     github: "https://github.com/christinetrac/dimension",
     devpost: "https://devpost.com/software/d-mension",
     highlights: "Dimension won 2nd place overall at RU Hacks 2021.",
@@ -91,7 +91,7 @@ export const friendle = {
 
 export const market = {
     title: "Aftr Markt",
-    subtitle: "Aftr Markt is a permission-less auction platform on blockchain that anyone can contribute to and verify on the Ethereum chain for full transparency. Users can put belongings up for a blind auction after their item has been verified by the authenticity system. Conversely, users can also place bids on items in the app.",
+    subtitle: "Aftr Markt is a permission-less auction platform on blockchain that anyone can contribute to and verify on the Ethereum chain for full transparency. Users can put belongings up for a blind auction after their item has been verified by the authenticity system. Conversely, users can place bids on items in the app.",
     github: "https://github.com/christinetrac/aftrmarkt",
     devpost: "https://devpost.com/software/aftr-markt",
     highlights: "Aftr Markt won 3rd place overall at Hack Dartmouth 2021.",
