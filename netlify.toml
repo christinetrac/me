@@ -5,7 +5,3 @@
  [[redirects]]
   from = "https://christinetrac.dev"
   to = "https://www.christinetrac.dev"
- [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
