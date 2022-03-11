@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "build-output"
+
+ [[redirects]]
+  from = "https://christinetrac.dev"
+  to = "https://www.christinetrac.dev"
