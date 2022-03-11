@@ -24,12 +24,12 @@ function App() {
           >
               <Routes location={location}>
                   <Route exact path='/' element={<Home isMobile={isMobile}/>} />
-                  <Route exact path='/acnh' element={<Acnh isMobile={isMobile}/>} />
-                  <Route exact path='/friendle' element={<Friendle isMobile={isMobile}/>} />
-                  <Route exact path='/aftrmarkt' element={<Market isMobile={isMobile}/>} />
-                  <Route exact path='/glean' element={<Glean isMobile={isMobile}/>} />
-                  <Route exact path='/kashkitty' element={<Kitty isMobile={isMobile}/>} />
-                  <Route exact path='/dimension' element={<Dimension isMobile={isMobile}/>} />
+                  <Route path='/acnh' element={<Acnh isMobile={isMobile}/>} />
+                  <Route path='/friendle' element={<Friendle isMobile={isMobile}/>} />
+                  <Route path='/aftrmarkt' element={<Market isMobile={isMobile}/>} />
+                  <Route path='/glean' element={<Glean isMobile={isMobile}/>} />
+                  <Route path='/kashkitty' element={<Kitty isMobile={isMobile}/>} />
+                  <Route path='/dimension' element={<Dimension isMobile={isMobile}/>} />
               </Routes>
           </CSSTransition>
       </TransitionGroup>
