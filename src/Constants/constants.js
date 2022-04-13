@@ -78,7 +78,7 @@ export const dimension = {
 
 export const friendle = {
     title: "Friendle",
-    subtitle: "Friendle is a mobile app meant to connect users and make starting friendships easier. Users create a profile deck filled with their interests and personality. They get matched with someone based on a compatibility algorithm, then a unique hangout session with music, food, games and movie reccomendations is generated. Make a friend and then match with someone new!",
+    subtitle: "Friendle is a mobile app meant to connect users and make starting friendships easier. Users create a profile deck filled with their interests and personality. They get matched with someone based on a compatibility algorithm, then a unique hangout session with music, food, games and movie recommendations is generated. Make a friend and then match with someone new!",
     github: "https://github.com/christinetrac/friendle-frontend",
     devpost: "https://devpost.com/software/friendle-zm8i0n",
     highlights: "Friendle won 2nd place overall and 1st place for “Telus Best Hack that Leverages Technology to Improve Mental Health” at UofT Hacks 2021.",
