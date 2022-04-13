@@ -207,7 +207,7 @@ export default function Home(props) {
                 <div className={styles.title}>Nice to meet you! I’m Christine.</div>
                 <div className={styles.subtitle}>
                     An experienced <span>Frontend Engineer</span> with a passion for UI and software.
-                    Currently a junior studying Computer Engineering at the University of Waterloo.
+                    Currently in junior year studying Computer Engineering at the University of Waterloo.
                     Open to Winter 2023 internship opportunities. 
                 </div>
                 <button
