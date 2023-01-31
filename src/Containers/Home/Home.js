@@ -207,7 +207,7 @@ export default function Home(props) {
                 <div className={styles.title}>Nice to meet you! I’m Christine.</div>
                 <div className={styles.subtitle}>
                     An experienced <span>Software Engineer</span> with a passion for UI and design.
-                    I'm currently a Senior studying Computer Engineering at the University of Waterloo with a graduation date slated for April 2024.
+                    Currently a Senior studying Computer Engineering at the University of Waterloo with a graduation date slated for <span>April 2024</span>.
                 </div>
                 <button
                     className={props.isMobile && styles.noMargin}
