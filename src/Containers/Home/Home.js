@@ -206,7 +206,7 @@ export default function Home(props) {
             <div className={styles.introContainer}>
                 <div className={styles.title}>Nice to meet you! I’m Christine.</div>
                 <div className={styles.subtitle}>
-                    An experienced <span>Software Engineer</span> with a passion for UI and design.
+                    An versatile <span>Software Engineer</span> with 6+ internships completed in both frontend and backend development.
                     Currently a Senior studying Computer Engineering at the University of Waterloo with a graduation date slated for <span>April 2024</span>.
                 </div>
                 <button
