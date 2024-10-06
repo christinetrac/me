@@ -206,8 +206,8 @@ export default function Home(props) {
             <div className={styles.introContainer}>
                 <div className={styles.title}>Nice to meet you! I’m Christine.</div>
                 <div className={styles.subtitle}>
-                    A versatile <span>Software Engineer</span> with experience in frontend, backend and data engineering.
-                    Studied Computer Engineering and graduated from the University of Waterloo in 2024. Currently a SWE @ Amazon!
+                    A versatile <span>Software Engineer</span> with almost 3 years of experience in frontend, backend and data engineering.
+                    Studied Computer Engineering at the University of Waterloo and graduated in 2024. <span>Currently a full-time SDE @ Amazon!</span>
                 </div>
                 <button
                     className={props.isMobile && styles.noMargin}
