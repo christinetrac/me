@@ -209,14 +209,14 @@ export default function Home(props) {
                     A versatile <span>Software Engineer</span> with almost 3 years of experience in frontend, backend and data engineering.
                     Studied Computer Engineering at the University of Waterloo and graduated in 2024. <span>Currently a full-time SDE @ Amazon!</span>
                 </div>
-                <button
-                    className={props.isMobile && styles.noMargin}
-                    onClick={() => {
-                        window.open(resume, "_blank");
-                    }}
-                >
-                    See My Resume
-                </button>
+                // <button
+                //     className={props.isMobile && styles.noMargin}
+                //     onClick={() => {
+                //         window.open(resume, "_blank");
+                //     }}
+                // >
+                //     See My Resume
+                // </button>
             </div>
             <Slider {...settings} className={styles.slider}>
                 {projects.map((project, i) => (
